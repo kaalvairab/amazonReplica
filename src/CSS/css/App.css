@@ -1,0 +1,182 @@
+button {
+  background-color: #febd69;
+  border: none;
+  padding: 4px 6px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  border: 1px solid #ffffff;
+}
+
+header {
+  color: #ffffff;
+  width: 100%;
+  max-width: 1600px;
+  text-align: center;
+}
+
+.header__1 {
+  background-color: #131921;
+  display: flex;
+  padding: 4px 6px;
+  align-self: center;
+}
+.header__1 div {
+  padding: 8px;
+}
+
+.header__logo {
+  width: 8%;
+  padding: 16px;
+  display: flex;
+  align-self: center;
+}
+
+.header__location {
+  display: flex;
+  flex-direction: column;
+  color: #ccc4bc;
+  font-size: 14px;
+  align-self: center;
+}
+.header__location a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  display: flex;
+}
+
+.header__1__searchBar {
+  display: flex;
+  align-self: center;
+  flex: 1;
+}
+.header__1__searchBar input {
+  display: flex;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  padding: 0 8px;
+}
+.header__1__searchBar input:focus {
+  outline-color: #febd69;
+}
+.header__1__searchBar select {
+  border: none;
+  border-right: 1px solid black;
+  border-radius: 5px 0 0 5px;
+  background-color: #f3f3f3;
+  padding: 0 8px;
+}
+.header__1__searchBar button {
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  padding: 6px 10px;
+}
+
+.header__1__language {
+  display: flex;
+  align-items: center;
+}
+.header__1__language select {
+  border: none;
+  color: #febd69;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #00000000;
+}
+
+.header__1__options {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-self: center;
+  color: #ffffff;
+  font-size: 12;
+  padding: 6px 10px;
+}
+
+.account__options {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  color: black;
+  width: 25%;
+  border: 1px solid black;
+}
+.account__options div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+.account__options div:nth-child(1) button {
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid black;
+  width: 75%;
+  margin: auto;
+  border-radius: 4px;
+}
+.account__options div:nth-child(1) a {
+  font-size: 12px;
+}
+.account__options div:nth-child(2) {
+  display: flex;
+  border-top: 1px solid black;
+  margin: auto;
+  width: 100%;
+}
+.account__options div:nth-child(2) ul {
+  list-style: none;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0;
+}
+.account__options div:nth-child(2) ul li {
+  font-size: 12px;
+}
+.account__options div:nth-child(2) ul li a {
+  color: black;
+  font-size: 12px;
+  padding: 4px;
+  font-weight: bold;
+}
+
+.sign__in:hover + .account__options {
+  visibility: visible;
+}
+
+.account__options:hover {
+  visibility: visible;
+}
+
+.header__2 {
+  background-color: #232f3e;
+}
+.header__2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  padding: 6px;
+}
+.header__2 ul li {
+  margin: auto;
+}
+.header__2 ul li a {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 4px;
+}
+
+/*# sourceMappingURL=App.css.map */
