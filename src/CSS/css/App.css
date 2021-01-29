@@ -63,7 +63,7 @@ header {
   padding: 0 8px;
 }
 .header__1__searchBar input:focus {
-  outline-color: #febd69;
+  outline: none;
 }
 .header__1__searchBar select {
   border: none;
@@ -76,6 +76,10 @@ header {
   border-radius: 0 5px 5px 0;
   display: flex;
   padding: 6px 10px;
+}
+
+.header__1__searchBar > input:focus .header__1__searchBar {
+  outline: 1px solid #febd69;
 }
 
 .header__1__language {
@@ -177,6 +181,10 @@ header {
   font-weight: bold;
   font-size: 14px;
   padding: 4px;
+}
+
+.slider {
+  margin-bottom: -50%;
 }
 
 /*# sourceMappingURL=App.css.map */

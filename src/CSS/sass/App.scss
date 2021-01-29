@@ -65,8 +65,9 @@ header {
     font-size: 16px;
     padding: 0 8px;
   }
-  input:focus {
-    outline-color: #febd69;
+
+  input:focus{
+    outline: none;
   }
   select {
     border: none;
@@ -80,6 +81,10 @@ header {
     display: flex;
     padding: 6px 10px;
   }
+}
+
+.header__1__searchBar > input:focus .header__1__searchBar {
+  outline: 1px solid #febd69;
 }
 
 .header__1__language {
@@ -143,13 +148,13 @@ header {
 
     ul {
       list-style: none;
-      margin:0 auto;
+      margin: 0 auto;
       text-align: left;
       padding: 0;
 
       li {
         font-size: 12px;
-        a{
+        a {
           color: black;
           font-size: 12px;
           padding: 4px;
@@ -185,7 +190,13 @@ header {
         font-size: 14px;
         padding: 4px;
       }
-
     }
   }
+}
+
+
+
+// SILDER
+.slider{
+  margin-bottom: -50%;
 }

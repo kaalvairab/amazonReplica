@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 import Header from './components/header'
+import Home from './components/home'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         {/* HOMEPAGE */}
         <Route path='/'>
         <Header/>
+          <Home/>
         </Route>
       </Switch>
 
