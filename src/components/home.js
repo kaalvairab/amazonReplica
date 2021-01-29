@@ -1,12 +1,17 @@
 import React,{Component} from 'react'
 
+// EXTERNAL LIBRARIES
 import Slider from 'infinite-react-carousel';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+
+// COMPONENTS
+import Category from './Category'
 
 
 function home() {
 
   const settings =  {
+    autoplay:true
       
   };
   return (
@@ -30,6 +35,57 @@ function home() {
           </div>
 
       </Slider>
+
+      <div className='catalogues'>
+          <Category
+          title='Shop by Category'
+          img='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2020/PrimeDay/Fuji_Dash_PD_Nonprime__1x._SY304_CB403084762_.jpg'
+          link='/shopByCategory'
+          linkTxt='Shop'
+          />
+
+          <Category
+          title='Shop for Fit'
+          img='https://images-na.ssl-images-amazon.com/images/G/01/events/GFAH/GWDesktop_SingleImageCard_fitathome_1x._SY304_CB434924743_.jpg'
+          link='/shopByCategory'
+          linkTxt='Explore Now'
+          />
+          
+          <Category
+          title='Beauty Picks'
+          img='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Beauty_1x._SY304_CB432774351_.jpg'
+          link='/shopByCategory'
+          linkTxt='See More'
+          />
+
+          <Category
+          title='Amazon Basics'
+          img='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/July/amazonbasics_520x520._SY304_CB442725065_.jpg'
+          link='/shopByCategory'
+          linkTxt='Explore More'
+          />
+
+          <Category
+          title='Shop by Category'
+          img='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2020/PrimeDay/Fuji_Dash_PD_Nonprime__1x._SY304_CB403084762_.jpg'
+          link='/shopByCategory'
+          linkTxt='Shop'
+          />
+
+          <Category
+          title='Shop for Fit'
+          img='https://images-na.ssl-images-amazon.com/images/G/01/events/GFAH/GWDesktop_SingleImageCard_fitathome_1x._SY304_CB434924743_.jpg'
+          link='/shopByCategory'
+          linkTxt='See More'
+          />
+          
+          <Category
+          title='Beauty Picks'
+          img='https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Beauty_1x._SY304_CB432774351_.jpg'
+          link='/shopByCategory'
+          linkTxt='Explore More'
+          />
+      </div>
 
     </div>
   )

@@ -13,7 +13,7 @@ function header() {
 
       <div className='header__1'>
 
-        <Link path='/' className='header__logo'><img src="https://1079life.com/wp-content/uploads/2018/12/amazon_PNG11.png"/></Link>
+        <Link to='/' className='header__logo'><img src="https://1079life.com/wp-content/uploads/2018/12/amazon_PNG11.png"/></Link>
         
         <div className='header__location'>
           Deliver to
@@ -41,7 +41,7 @@ function header() {
         </select>
          </div>
 
-        <Link className='header__1__options sign__in'>
+        <Link className='header__1__options sign__in' to='/login'>
           <span>Hello, Sign In</span>
           <span><b>Account & Lists           
             <ArrowDropDownOutlinedIcon/></b>
@@ -51,7 +51,7 @@ function header() {
         <div className="account__options">
             <div>
               <button>Sign In</button>
-               <Link path='#!'>New Customer ? Start Here</Link>
+               <Link to='#!'>New Customer ? Start Here</Link>
             </div>
 
             <div>
@@ -74,13 +74,13 @@ function header() {
             </div>
           </div>
 
-        <Link className='header__1__options'>
+        <Link className='header__1__options' to='#!'>
           <span>Returns</span>
           <span><b>& Orders</b>
           </span>
         </Link>
 
-        <Link className='header__1__options'>
+        <Link className='header__1__options' to='/checkout'>
           <span><b>0</b></span>
           <span><ShoppingCartOutlinedIcon/></span>
       

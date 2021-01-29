@@ -9,6 +9,8 @@ import {
 
 import Header from './components/header'
 import Home from './components/home'
+import ShopByCategory from './components/ShopByCategory'
+import Login from './components/Login'
 
 
 function App() {
@@ -17,9 +19,26 @@ function App() {
       <div className="App">
       <Switch>
 
+
+      {/* Cart */}
+      <Route path='/checkout'>
+        <Header/>
+      </Route>
+
+      {/* SHOP BY CATEGORY */}
+      <Route path='/shopBycategory'>
+        <Header/>
+        <ShopByCategory/>
+      </Route>
+
+      {/* LOGIN */}
+      <Route path='/login'>
+        <Login/>
+      </Route>
+
         {/* HOMEPAGE */}
         <Route path='/'>
-        <Header/>
+          <Header/>
           <Home/>
         </Route>
       </Switch>

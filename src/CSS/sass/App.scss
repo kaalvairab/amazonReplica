@@ -1,9 +1,14 @@
 $headerFontColor: #ffffff;
 
+:root {
+  background-color: #e2e2e2e2;
+}
 button {
   background-color: #febd69;
-  border: none;
+  border: 1px solid black;
+  border-radius: 4px;
   padding: 4px 6px;
+  
 }
 
 a {
@@ -66,7 +71,7 @@ header {
     padding: 0 8px;
   }
 
-  input:focus{
+  input:focus {
     outline: none;
   }
   select {
@@ -121,6 +126,7 @@ header {
   color: black;
   width: 25%;
   border: 1px solid black;
+  z-index: 1;
 
   div:nth-child(1) {
     display: flex;
@@ -194,9 +200,129 @@ header {
   }
 }
 
-
-
 // SILDER
-.slider{
-  margin-bottom: -50%;
+.slider {
+  margin: auto;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: -1000;
+  margin-bottom: -25%;
+
+  .carousel-prev,
+  .carousel-next {
+    height: 40%;
+  }
+}
+
+.catalogues {
+  margin: 1%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category {
+  padding: 2%;
+  width: 20%;
+  background-color: white;
+  margin: 1% auto;
+  z-index: 1;
+
+  .title {
+    margin-top: 0;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: fit-content;
+  }
+
+  a {
+    font-size: 12px;
+    color: #5a7385;
+    font-weight: bold;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+// PRODUCT
+.product {
+  width: 20%;
+  .rating {
+    display: flex;
+  }
+
+  img {
+    height: auto;
+  }
+  button {
+    margin: auto;
+    width: 50%;
+    display: flow-root;
+  }
+}
+
+// SHOPBYCATEGORY
+.shopByCategory {
+  margin: auto;
+  width: 95%;
+
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+// LOGIN
+.login{
+  margin: auto;
+  width: 50%;
+  height: 100%;
+  padding: 4%;
+
+  .logo{
+    width: 25%;
+    margin: auto;
+  }
+
+  .container{
+    width: 50%;
+    margin: auto;
+
+    h5{
+      margin-bottom: 0;
+    }
+
+    input{
+      padding: 1%;
+      width: 100%;
+      border: 1px solid grey;
+      border-radius: 4px;
+    
+    }
+
+    input:focus,button:focus{
+      outline: 1px solid orange;
+      border: none;
+    }
+
+    form{
+      border: 1px solid grey;
+    border-radius: 4px;
+    padding: 2% 4%;
+    }
+
+    button{
+      width: 75%;
+      margin: auto;
+      display: flow-root;
+    }
+
+    p{
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+
 }
