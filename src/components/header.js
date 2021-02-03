@@ -7,7 +7,16 @@ import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
 import ArrowDropDownOutlinedIcon from '@material-ui/icons/ArrowDropDownOutlined';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 
-function header() {
+
+
+
+
+function Header() {
+
+
+  
+
+
   return (
     <header className='header'>
 
@@ -103,4 +112,4 @@ function header() {
   )
 }
 
-export default header
+export default Header

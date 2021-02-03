@@ -17,7 +17,7 @@ function ShopByCategory() {
             />
 
           <Product
-            id='001'
+            id='002'
             title='RAPPOO || Wireless Optical Mouse'
             rating={4}
             img='https://d2j6dbq0eux0bg.cloudfront.net/images/1107006/641928853.jpg'
@@ -25,7 +25,7 @@ function ShopByCategory() {
             />
 
             <Product
-            id='001'
+            id='003'
             title='RAPPOO || Wireless Optical Mouse'
             rating={4}
             img='https://d2j6dbq0eux0bg.cloudfront.net/images/1107006/641928853.jpg'
@@ -33,7 +33,7 @@ function ShopByCategory() {
             />
 
             <Product
-            id='001'
+            id='004'
             title='RAPPOO || Wireless Optical Mouse'
             rating={4}
             img='https://d2j6dbq0eux0bg.cloudfront.net/images/1107006/641928853.jpg'
@@ -41,7 +41,7 @@ function ShopByCategory() {
             />
             
             <Product
-            id='001'
+            id='005'
             title='RAPPOO || Wireless Optical Mouse'
             rating={4}
             img='https://d2j6dbq0eux0bg.cloudfront.net/images/1107006/641928853.jpg'

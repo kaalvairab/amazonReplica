@@ -1,14 +1,26 @@
 export const initialState={
-
-cart=[]
+cart=[{dmsc}]
 }
 
-function Reducer() {
-  return (
-    <div>
+function reducer(state,action) {
+
+
+  switch (action.type) {
+
+    // ADD ITEM TO CART
+    case 'ADD_TO_CART':
+      return {
+        ...state,
+        cart:[...state.cart,action.item], 
+      };
+
+      // REMOVE ITEM FROM CART
       
-    </div>
-  )
+  
+    default:
+      return state;
+  }
+
 }
 
-export default Reducer
+export default reducer
