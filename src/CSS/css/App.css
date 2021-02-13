@@ -332,8 +332,10 @@ header {
   display: flex;
 }
 
-.subTotal {
+.subtotal {
   padding: 1%;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=App.css.map */
