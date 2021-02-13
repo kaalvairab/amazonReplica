@@ -8,7 +8,7 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import Category from './Category'
 
 
-function home() {
+function Home() {
 
   const settings =  {
     autoplay:true
@@ -91,4 +91,4 @@ function home() {
   )
 }
 
-export default home
+export default Home
