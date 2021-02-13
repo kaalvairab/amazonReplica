@@ -11,6 +11,7 @@ import Header from './components/Header'
 import Home from './components/Home'
 import ShopByCategory from './components/ShopByCategory'
 import Login from './components/Login'
+import Checkout from './components/Checkout'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       {/* Cart */}
       <Route path='/checkout'>
         <Header/>
+        <Checkout/>
       </Route>
 
       {/* SHOP BY CATEGORY */}

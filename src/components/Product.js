@@ -1,23 +1,24 @@
 import React from 'react'
+import { useStateValue } from '../StateProvider'
 
 
 function Product({id,title,rating,price,img}) {
 
-  // const [{dispatch}]= useStateValue();
+  const [{cart},dispatch] = useStateValue()
 
 
 const addToCart=()=>{
 
-  // dispatch({
-  //   type:'ADD_TO_BASKET',
-  //   item:{
-  //     id:id,
-  //     title:title,
-  //     price:price,
-  //     rating:rating,
-  //     img:img,
-  //   },
-  // });
+  dispatch({
+    type:'ADD_TO_CART',
+    item:{
+      id:id,
+      title:title,
+      price:price,
+      rating:rating,
+      img:img,
+    },
+  });
 
   console.log("addToCart")
 }

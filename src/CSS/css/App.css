@@ -1,3 +1,8 @@
+.App {
+  max-width: 1600px;
+  margin: auto;
+}
+
 :root {
   background-color: #e2e2e2e2;
 }
@@ -22,6 +27,9 @@ header {
   width: 100%;
   max-width: 1600px;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .header__1 {
@@ -277,7 +285,8 @@ header {
   border: 1px solid grey;
   border-radius: 4px;
 }
-.login .container input:focus, .login .container button:focus {
+.login .container input:focus,
+.login .container button:focus {
   outline: 1px solid orange;
   border: none;
 }
@@ -294,6 +303,37 @@ header {
 .login .container p {
   font-size: 12px;
   text-align: center;
+}
+
+.checkout {
+  display: flex;
+  width: 100%;
+  margin: auto 4%;
+}
+.checkout .items {
+  width: 70%;
+}
+
+.checkoutProduct {
+  display: flex;
+  padding: 1%;
+  background-color: white;
+  margin: 1% auto;
+}
+.checkoutProduct img {
+  width: 10%;
+  height: auto;
+  object-fit: cover;
+}
+.checkoutProduct > div {
+  padding: 2%;
+}
+.checkoutProduct > div .rating {
+  display: flex;
+}
+
+.subTotal {
+  padding: 1%;
 }
 
 /*# sourceMappingURL=App.css.map */

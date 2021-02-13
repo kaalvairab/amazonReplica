@@ -6,16 +6,13 @@ import RoomOutlinedIcon from '@material-ui/icons/RoomOutlined';
 import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
 import ArrowDropDownOutlinedIcon from '@material-ui/icons/ArrowDropDownOutlined';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
-
-
+import { useStateValue } from '../StateProvider';
 
 
 
 function Header() {
 
-
-  
-
+  const [{cart}] = useStateValue()
 
   return (
     <header className='header'>
@@ -90,7 +87,7 @@ function Header() {
         </Link>
 
         <Link className='header__1__options' to='/checkout'>
-          <span><b>0</b></span>
+          <span><b>{cart?.length}</b></span>
           <span><ShoppingCartOutlinedIcon/></span>
       
         </Link>

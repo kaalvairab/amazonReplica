@@ -1,5 +1,10 @@
 $headerFontColor: #ffffff;
 
+.App {
+  max-width: 1600px;
+  margin: auto;
+}
+
 :root {
   background-color: #e2e2e2e2;
 }
@@ -8,7 +13,6 @@ button {
   border: 1px solid black;
   border-radius: 4px;
   padding: 4px 6px;
-  
 }
 
 a {
@@ -24,6 +28,9 @@ header {
   width: 100%;
   max-width: 1600px;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .header__1 {
@@ -275,54 +282,93 @@ header {
 }
 
 // LOGIN
-.login{
+.login {
   margin: auto;
   width: 50%;
   height: 100%;
   padding: 4%;
 
-  .logo{
+  .logo {
     width: 25%;
     margin: auto;
   }
 
-  .container{
+  .container {
     width: 50%;
     margin: auto;
 
-    h5{
+    h5 {
       margin-bottom: 0;
     }
 
-    input{
+    input {
       padding: 1%;
       width: 100%;
       border: 1px solid grey;
       border-radius: 4px;
-    
     }
 
-    input:focus,button:focus{
+    input:focus,
+    button:focus {
       outline: 1px solid orange;
       border: none;
     }
 
-    form{
+    form {
       border: 1px solid grey;
-    border-radius: 4px;
-    padding: 2% 4%;
+      border-radius: 4px;
+      padding: 2% 4%;
     }
 
-    button{
+    button {
       width: 75%;
       margin: auto;
       display: flow-root;
     }
 
-    p{
+    p {
       font-size: 12px;
       text-align: center;
     }
   }
+}
 
+// CHECKOUT
+.checkout {
+  display: flex;
+  width: 100%;
+  margin: auto 4%;
+
+  .items {
+    width: 70%;
+  }
+}
+// CHECKOUTPRODUCT
+.checkoutProduct {
+  display: flex;
+  padding: 1%;
+  background-color: white;
+  margin: 1% auto;
+
+  img {
+    width: 10%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  > div {
+    padding: 2%;
+
+    title {
+    }
+
+    .rating {
+      display: flex;
+    }
+  }
+}
+
+// SUBTOTAL
+.subTotal {
+  padding: 1%;
 }
