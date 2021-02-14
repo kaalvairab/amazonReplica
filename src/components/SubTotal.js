@@ -8,6 +8,10 @@ function SubTotal() {
 
   const [{cart},dispatch] = useStateValue()
 
+  const checkout=()=>{
+    alert('Checkout Not Available')
+  }
+
   return (
     <div className='subtotal'>
 
@@ -30,7 +34,7 @@ function SubTotal() {
       prefix = {'$'}
       />
 
-      <button>Checkout</button>
+      <button onClick={checkout}>Checkout</button>
     </div>
   )
 }

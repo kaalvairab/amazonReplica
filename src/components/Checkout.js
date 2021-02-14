@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { useStateValue } from '../StateProvider'
 import CheckoutProduct from './CheckoutProduct'
 import SubTotal from './SubTotal'
@@ -13,7 +14,7 @@ function Checkout() {
  {cart?.length===0 ? (
    <div>
    <h2>Your Basket is Empty !</h2>
-   <p>Add items now !</p>
+   <Link to='/shopByCategory'><h4>Click Here to Add items now !</h4></Link>
  </div>
  ):
 <div>

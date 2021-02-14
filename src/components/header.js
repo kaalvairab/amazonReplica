@@ -8,11 +8,20 @@ import ArrowDropDownOutlinedIcon from '@material-ui/icons/ArrowDropDownOutlined'
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import { useStateValue } from '../StateProvider';
 
+import {auth} from '../Firebase'
+
 
 
 function Header() {
 
-  const [{cart}] = useStateValue()
+  const [{cart,user}] = useStateValue()
+
+  const login=()=>{
+    if (user){
+      auth.signOut()
+    }
+
+  }
 
   return (
     <header className='header'>
@@ -47,14 +56,16 @@ function Header() {
         </select>
          </div>
 
-        <Link className='header__1__options sign__in' to='/login'>
-          <span>Hello, Sign In</span>
-          <span><b>Account & Lists           
-            <ArrowDropDownOutlinedIcon/></b>
+        <Link className='header__1__options sign__in' to={!user && '/login'}>
+          <div onClick={login}>
+          <span>Hello, {user?.email} {user ? 'Sign Out' : 'Sign in'}</span>
+          
+          <span>{!user && <b>Account & Lists           
+            <ArrowDropDownOutlinedIcon/></b>}
           </span>
+          </div>
         </Link>
-
-        <div className="account__options">
+          {!user &&         <div className="account__options">
             <div>
               <button>Sign In</button>
                <Link to='#!'>New Customer ? Start Here</Link>
@@ -78,7 +89,9 @@ function Header() {
                 <li><a href='#!'>Content & Devices</a></li> 
               </ul>
             </div>
-          </div>
+          </div>}
+
+
 
         <Link className='header__1__options' to='#!'>
           <span>Returns</span>

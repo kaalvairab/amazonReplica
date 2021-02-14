@@ -117,12 +117,17 @@ header {
   padding: 6px 10px;
 }
 
+.sign__in div {
+  display: flex;
+  flex-direction: column;
+}
+
 .account__options {
   visibility: hidden;
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 10%;
+  top: 70%;
   right: 10%;
   background-color: #ffffff;
   border-radius: 2px;

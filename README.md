@@ -1,10 +1,10 @@
 <b>amazonReplica</b>
 
-The project is created on React jS. The one page site is a replica of an Amazon.com, World's most popular ecommerce site.
+Replica of an <a href='https://amazon.com'>AMAZON</a> on React JS.
 
-<b>Technologies</b>
+<b><u>Technologies</u></b>
 
-Markup : HTML
+<b>Markup :</b> HTML
 
 Styling : CSS
 
@@ -12,9 +12,12 @@ Preprocessor : SASS
 
 Language : Javascript
 
-<b>Libraries</b>
+<b><u>Libraries</u></b>
 
 Routes & Links : react-router-dom
+
 Carousel : infinite-react-carousel
+
 Icons : Material-ui
+
 Currency Format : react-currency-format
