@@ -1,23 +1,23 @@
 <b>amazonReplica</b>
 
-Replica of an <a href='https://amazon.com'>AMAZON</a> on React JS.
+Replica of an <a href='https://amazon.com' target="_blank" rel="noopener noreferrer">AMAZON</a> on React JS.
 
 <b><u>Technologies</u></b>
 
 <b>Markup :</b> HTML
 
-Styling : CSS
+<b>Styling :</b> CSS <b></b>
 
-Preprocessor : SASS
+<b>Preprocessor :</b> SASS
 
-Language : Javascript
+<b>Language :</b> Javascript
 
 <b><u>Libraries</u></b>
 
-Routes & Links : react-router-dom
+<b>Routes :</b> Router, Switch, Link from react-router-dom
 
-Carousel : infinite-react-carousel
+<b>Carousel :</b> infinite-react-carousel
 
-Icons : Material-ui
+<b>Icons :</b> Material-ui Icons
 
-Currency Format : react-currency-format
+<b>Currency Format :</b>CurrecyFormat from react-currency-format
