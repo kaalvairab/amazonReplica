@@ -1,18 +1,20 @@
-<b>amazonReplica</b>
+<h1>amazonReplica</h1>
 
 Replica of an <a href='https://amazon.com' target="_blank" rel="noopener noreferrer">AMAZON</a> on React JS.
 
-<b><u>Technologies</u></b>
+<h2>Technologies</h2>
 
 <b>Markup :</b> HTML
 
-<b>Styling :</b> CSS <b></b>
+<b>Styling :</b> CSS
 
 <b>Preprocessor :</b> SASS
 
 <b>Language :</b> Javascript
 
-<b><u>Libraries</u></b>
+<b>Authentication :</b> Firebase auth
+
+<h2>Libraries</h2>
 
 <b>Routes :</b> Router, Switch, Link from react-router-dom
 
@@ -20,4 +22,4 @@ Replica of an <a href='https://amazon.com' target="_blank" rel="noopener norefer
 
 <b>Icons :</b> Material-ui Icons
 
-<b>Currency Format :</b>CurrecyFormat from react-currency-format
+<b>Currency Format :</b> CurrecyFormat from react-currency-format
