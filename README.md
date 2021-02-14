@@ -16,10 +16,10 @@ Replica of an <a href='https://amazon.com' target="_blank" rel="noopener norefer
 
 <h2>Libraries</h2>
 
-<b>Routes :</b> Router, Switch, Link from react-router-dom
+<b>Routes :</b> Router, Switch, Link from <i>react-router-dom</i>
 
-<b>Carousel :</b> infinite-react-carousel
+<b>Carousel :</b> <i>infinite-react-carousel</i>
 
-<b>Icons :</b> Material-ui Icons
+<b>Icons :</b> <i>Material-ui Icons</i>
 
-<b>Currency Format :</b> CurrecyFormat from react-currency-format
+<b>Currency Format :</b> CurrecyFormat from <i>react-currency-format</i>
